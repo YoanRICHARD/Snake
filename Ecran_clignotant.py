@@ -16,13 +16,13 @@ while True:
                 pygame.quit()
                 sys.exit()
             if event.key == pygame.K_UP:
-                print ("↑")
+                print("↑")
             if event.key == pygame.K_LEFT:
-                print ("←")
+                print("←")
             if event.key == pygame.K_DOWN:
-                print ("↓")
+                print("↓")
             if event.key == pygame.K_RIGHT:
-                print ("→")
+                print("→")
     red = random.randint(0, 255)
     green = random.randint(0, 255)
     blue = random.randint(0, 255)
@@ -30,4 +30,3 @@ while True:
     screen.fill(color)
     pygame.display.update()
     clock.tick(3)
-

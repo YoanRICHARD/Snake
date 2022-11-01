@@ -12,18 +12,18 @@ red = 255
 green = 255
 blue = 255
 color = [red, green, blue]
-for i in range (15):
+for i in range(15):
     x += 40
     y = -40
-    for j in range (15):
+    for j in range(15):
         y += 40
         rect = [x, y, width, height]
         pygame.draw.rect(screen, color, rect)
 x = -20
-for i in range (15):
+for i in range(15):
     x += 40
     y = -20
-    for j in range (15):
+    for j in range(15):
         y += 40
         rect = [x, y, width, height]
         pygame.draw.rect(screen, color, rect)
@@ -51,12 +51,10 @@ while True:
                 pygame.quit()
                 sys.exit()
             if event.key == pygame.K_UP:
-                print ("↑")
+                print("↑")
             if event.key == pygame.K_LEFT:
-                print ("←")
+                print("←")
             if event.key == pygame.K_DOWN:
-                print ("↓")
+                print("↓")
             if event.key == pygame.K_RIGHT:
-                print ("→")
-                  
-
+                print("→")
