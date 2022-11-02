@@ -1,5 +1,6 @@
 import sys
 import pygame
+import random
 
 pygame.init()
 screen = pygame.display.set_mode([600, 600])
@@ -47,7 +48,7 @@ while True:
         for j in range(15):
             y += 40
             rect = [x, y, width, height]
-            pygame.draw.rect(screen, black, rect)
+            pygame.draw.rect(screen, [random.randint(0, 255),random.randint(0, 255),random.randint(0, 255)], rect)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
